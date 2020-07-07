@@ -9,7 +9,7 @@ jobs:
       uses: actions/checkout@v2
       
     - name: update jupyter dependencies with repo2docker
-      uses: machine-learning-apps/repo2docker-action@master
+      uses: machine-learning-apps/repo2docker-action@0.2
       with:
         IMAGE_NAME: "hamelsmu/repo2docker-test"
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
