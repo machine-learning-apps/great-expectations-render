@@ -1,13 +1,8 @@
 name: Test
-on: [pull_request, push]
+on: [push]
 
 jobs:
   imagename:
-    runs-on: ubuntu-latest
-    steps:
- 
- binder-actions-master:
-    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:  
     - name: Checkout PR
